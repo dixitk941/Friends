@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Day</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Happy Friendship Day!</h1>
+        <nav>
+            <ul>
+                <li><a href="#stories">Friendship Stories</a></li>
+                <li><a href="#gallery">Photo Gallery</a></li>
+                <li><a href="#quotes">Friendship Quotes</a></li>
+                <li><a href="#quiz">Friendship Quiz</a></li>
+                <li><a href="#messages">Message Board</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="stories" class="card">
+            <h2>Friendship Stories</h2>
+            <form id="storyForm">
+                <textarea id="storyInput" placeholder="Share your friendship story..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="storyList" class="list"></div>
+        </section>
+
+        <section id="gallery" class="card">
+            <h2>Photo Gallery</h2>
+            <input type="file" id="photoInput" accept="image/*">
+            <div id="photoList" class="photo-grid"></div>
+        </section>
+
+        <section id="quotes" class="card">
+            <h2>Friendship Quotes</h2>
+            <ul>
+                <li>"A friend is someone who knows all about you and still loves you." - Elbert Hubbard</li>
+                <li>"Friendship is born at that moment when one person says to another, ‘What! You too? I thought I was the only one.'" - C.S. Lewis</li>
+                <li>"True friendship comes when the silence between two people is comfortable." - David Tyson</li>
+            </ul>
+        </section>
+
+        <section id="quiz" class="card">
+            <h2>Friendship Quiz</h2>
+            <form id="quizForm">
+                <div class="form-group">
+                    <label>What is your friend's favorite color?</label>
+                    <input type="text" id="q1">
+                </div>
+                <div class="form-group">
+                    <label>Where did you meet your friend?</label>
+                    <input type="text" id="q2">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="quizResult"></div>
+        </section>
+
+        <section id="messages" class="card">
+            <h2>Message Board</h2>
+            <form id="messageForm">
+                <input type="text" id="messageInput" placeholder="Leave a message...">
+                <button type="submit">Submit</button>
+            </form>
+            <div id="messageList" class="list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Friendship Day</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
